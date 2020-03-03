@@ -207,6 +207,7 @@ def is_ros_binary_type(field_type, field_value):
 
 def _convert_from_ros_binary(field_type, field_value):
     field_value = base64.standard_b64encode(field_value)
+    field_value = field_value.decode()
     return field_value
 
 def _convert_from_ros_time(field_type, field_value):
