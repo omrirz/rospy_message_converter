@@ -1,3 +1,7 @@
 *.pyc
 .idea
+.vscode
 *.iml
+dist/
+build/
+rospy_message_converter.egg-info
